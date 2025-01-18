@@ -8,6 +8,10 @@ h1,h2,span{
     animation: fadeInColor 1s ease-out;
 }
 
+.adv {
+    animation: fadeInOpacity 2s ease-in-out infinite;
+}
+
 .body-landing-container {
     font-family: "Sedan SC", serif;
     background-color: #a5a5a5;
@@ -97,8 +101,6 @@ main {
     display: flex;
     flex-direction: column;
     transition: 1s;
-    animation: fadeIn 1s ease-out;
-
 }
 
 .card p{
@@ -113,7 +115,9 @@ margin-top: 0;
 
 }
 
-
+.card img{
+    animation: fadeIn 1s ease-out;
+}
 
 #category {
     place-items: center;
@@ -338,9 +342,10 @@ hr{
 #comparision {
     height:100%;
     width: auto;
-    padding:5rem 2rem;
+    padding:3rem 2rem;
     margin: 0;
     background-color: white;
+    text-align: center;
 }
 
 #comparision table {
@@ -374,6 +379,15 @@ hr{
   }
 
   @keyframes fadeInColor {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInOpacity {
     from {
       opacity: 0;
     }
