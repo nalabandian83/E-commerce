@@ -156,7 +156,7 @@ margin-top: 0;
 
 #testimonials {
     place-items: center;
-    place-content: center;
+    justify-content: center;
     position: relative;
     background-color: black;
     color: white;
@@ -341,11 +341,12 @@ hr{
 
 #comparision {
     height:100%;
-    width: auto;
-    padding:3rem 2rem;
+    width:100%;
+    padding:0.1rem 0 1.3rem 0;
     margin: 0;
     background-color: white;
     text-align: center;
+    color: #000;
 }
 
 #comparision table {
